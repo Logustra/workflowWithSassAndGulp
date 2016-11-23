@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $(".ok").css("background", "red");
+    $(".ok").css("background", "green");
 });

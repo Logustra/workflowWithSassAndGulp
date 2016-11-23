@@ -1,17 +1,17 @@
-var gulp = require('gulp'),
-		sass = require('gulp-sass'),
-		uglify = require('gulp-uglify'),
-		pump = require('pump'),
-		sourcemaps = require('gulp-sourcemaps'),
-		autoprefixer = require('gulp-autoprefixer'),
-		browserSync = require('browser-sync').create();
+var gulp = require("gulp"),
+		sass = require("gulp-sass"),
+		uglify = require("gulp-uglify"),
+		pump = require("pump"),
+		sourcemaps = require("gulp-sourcemaps"),
+		autoprefixer = require("gulp-autoprefixer"),
+		browserSync = require("browser-sync").create();
 
 // minify javaSripts
 gulp.task("uglify", function (cb) {
 	pump([
 			gulp.src("dist/builds/js/scripts.js"),
 			uglify(),
-			gulp.dest('dist/js')
+			gulp.dest("dist/js")
 		],
 		cb
 	)
@@ -20,15 +20,16 @@ gulp.task("uglify", function (cb) {
 
 // compile sass
 // sourcemaps
-// autoprefixer
+// automatic browser prefixing
 gulp.task("sass", function() {
 	return gulp.src("dist/builds/sass/**/*.scss")
 	.pipe(sourcemaps.init())
 	.pipe(sass({
 		outputStyle: "compressed"
-	}).on('error', sass.logError))
+	}).on("error", sass.logError))
 	.pipe(autoprefixer({
-		browsers : ["last 6 versions"]
+		browsers : ["last 6 versions"],
+		cascade: true
 	}))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest("dist/css"))

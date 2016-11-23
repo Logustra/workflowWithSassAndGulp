@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".ok").css("background","red")});
+$(document).ready(function(){$(".ok").css("background","green")});
