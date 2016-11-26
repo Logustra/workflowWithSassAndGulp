@@ -1,0 +1,32 @@
+.hero {
+  @include bgimg("../builds/images/bg-hero.jpg");
+  min-height: 870px;
+  color: $white;
+  text-align: center;
+
+  .heroContent {
+    padding-top: 175px;
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 300;
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+
+    .line {
+      content: '';
+      width: 145px;
+      height: 4px;
+      background: $white;
+      margin: 20px auto 25px auto;
+      border-radius: 50px;
+    }
+
+    p {
+      line-height: 15px;
+    }
+  }
+}

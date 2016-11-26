@@ -1,0 +1,152 @@
+.contact {
+  margin-top: -300px;
+  height: 700px;
+
+  .container {
+    height: 575px;
+    padding: 0;
+    box-shadow: 0px 0px 90px -5px rgba(0,0,0,0.75);
+
+    h2 {
+      margin-bottom: 45px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+
+      .form-control {
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid $black;
+        outline: none;
+        padding: 0;
+        box-shadow: none;
+      }
+
+    }
+
+    .sendEmail {
+      float: left;
+      width: 65%;
+      padding: 45px 45px 0 45px;
+      background: $white;
+
+      .col-sm-6 {
+        padding: 0;
+
+        .name {
+          padding-right: 35px;
+        }
+        .email {
+          padding-left: 35px;
+        }
+      }
+
+      .col-sm-10 {
+        padding: 0;
+      }
+
+      .col-sm-1 {
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+
+        .btn {
+          background: $black;
+          color: $white;
+          border-radius: 50px;
+          padding: 6px 20px;
+        }
+      }
+    }
+
+    .contactInfo {
+      float: left;
+      width: 35%;
+      background: $blue;
+      height: 100%;
+      color: $white;
+      padding: 45px;
+
+      .myEmail {
+        display: flex;
+        align-items: center;
+        content: '';
+        background: $white;
+        width: 100%;
+        height: 2px;
+        border-radius: 50px;
+
+        &:before {
+          content: 'Email';
+          font-weight: bold;
+          font-size: 1.8rem;
+          position: relative;
+          background: $blue;
+          padding-right: 20px;
+        }
+      }
+
+      .skype {
+        display: flex;
+        align-items: center;
+        content: '';
+        background: $white;
+        width: 100%;
+        height: 2px;
+        border-radius: 50px;
+
+        &:before {
+          content: 'Skype';
+          font-weight: bold;
+          font-size: 1.8rem;
+          position: relative;
+          background: $blue;
+          padding-right: 20px;
+        }
+      }
+
+      .call {
+        display: flex;
+        align-items: center;
+        content: '';
+        background: $white;
+        width: 100%;
+        height: 2px;
+        border-radius: 50px;
+
+        &:before {
+          content: 'Call';
+          font-weight: bold;
+          font-size: 1.8rem;
+          position: relative;
+          background: $blue;
+          padding-right: 20px;
+        }
+      }
+
+      .home {
+        display: flex;
+        align-items: center;
+        content: '';
+        background: $white;
+        width: 100%;
+        height: 2px;
+        border-radius: 50px;
+
+        &:before {
+          content: 'Home';
+          font-weight: bold;
+          font-size: 1.8rem;
+          position: relative;
+          background: $blue;
+          padding-right: 20px;
+        }
+      }
+
+      p {
+        padding: 15px 0 25px 0;
+      }
+    }
+  }
+}
