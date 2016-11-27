@@ -13,8 +13,8 @@
 
       .bold {
         font-weight: bold;
-      }
-    }
+      }// bold
+    }// h1
 
     .line {
       content: '';
@@ -23,10 +23,10 @@
       background: $white;
       margin: 20px auto 25px auto;
       border-radius: 50px;
-    }
+    }// line
 
     p {
       line-height: 15px;
-    }
-  }
-}
+    }// p
+  }// heroContent
+}// hero

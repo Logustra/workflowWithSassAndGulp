@@ -1,0 +1,41 @@
+.contact {
+  @media screen and(max-width: $small) {
+    @include clearfix;
+  }
+
+  .container {
+    .sendEmail {
+      @media screen and(max-width: $small) {
+        width: 100%;
+      }
+
+      textarea {
+        @media screen and(max-width: $small) {
+        margin-bottom: 100px;
+        }
+      }// textarea
+    }// sendEmail
+
+    .contactInfo {
+      @media screen and(max-width: $small) {
+        width: 100%;
+        height: auto;
+      }
+
+      .text {
+        @media screen and(max-width: $small) {
+          margin-bottom: 80px;
+        }
+      }// text
+    }// contactInfo
+  }// container
+}// contact
+
+footer {
+  .container {
+    @media screen and(max-width: $small) {
+      padding-top: 480px;
+      font-size: 1rem;
+    }
+  }// container
+}// footer

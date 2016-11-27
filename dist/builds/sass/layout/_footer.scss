@@ -24,21 +24,24 @@ footer {
 
           &:hover {
             color: $black;
-          }
-        }
+          }// hover
+        }// a
 
         i {
           font-size: .8rem;
           padding-left: 10px;
-        }
-      }
+        }// i
+      }// li
     }// ul
 
     .text-center {
+      a {
+        text-decoration: none;
+      }// a
 
       span {
         padding: 0 25px;
-      }
-    }
+      }// span
+    }// text-center
   }// container
-}
+}// footer
