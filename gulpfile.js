@@ -28,8 +28,7 @@ gulp.task("sass", function() {
 		outputStyle: "expanded"
 	}).on("error", sass.logError))
 	.pipe(autoprefixer({
-		browsers : ["last 6 versions"],
-		cascade: true
+		browsers : ["last 6 versions"]
 	}))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest("dist/css"))

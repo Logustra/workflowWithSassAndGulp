@@ -6,6 +6,7 @@
     "url": "https://github.com/Logustra/workflowWithSassAndGulp.git"
   },
   "author": "Faizal Andyka",
+  "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",

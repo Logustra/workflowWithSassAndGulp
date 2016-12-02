@@ -13,4 +13,4 @@ This is the repository for learning sass and gulp
 3. CD to the folder cd `workflowWithSassAndGulp`
 4. Run `npm-install` to install the project dependencies
 5. Install gulp.js via the linux terminal or Gitbash on a PC `npm install --global gulp-cli`
-6. Run the Grunt command `gulp`
+6. Run the Gulp command `gulp`
